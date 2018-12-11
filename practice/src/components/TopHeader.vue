@@ -70,18 +70,17 @@
 <script>
 export default {
   name: "TopHeader",
-  data () {
+  data() {
     return {
-      show:''
-    }
+      show: ""
+    };
   },
-  methods:{
-    toggle:function(index){
-      if(this.show===index){
-        this.show=0;
-      }
-      else{
-        this.show=index;
+  methods: {
+    toggle: function(index) {
+      if (this.show === index) {
+        this.show = 0;
+      } else {
+        this.show = index;
       }
     }
   }
@@ -90,148 +89,151 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.nav{
-  width:100%;
-  height:70px;
-  position:fixed;
-  top:0;
-  z-index:99;
-  background:#fff;
-  box-shadow:#F2EDF3 2px 2px 6px;
+.nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #fff;
+  box-shadow: #f2edf3 2px 2px 6px;
 }
-.logo{
-  width:260px;
-  height:100%;
-  text-align:center;
-  float:left;
+.logo {
+  width: 260px;
+  height: 100%;
+  text-align: center;
+  float: left;
 }
-.logo_img{
-  width:165px;
-  margin-top:18px;
+.logo_img {
+  width: 165px;
+  margin-top: 18px;
 }
-.search{
-  float:left;
-  width:250px;
-  text-align:center;
+.search {
+  float: left;
+  width: 250px;
+  text-align: center;
 }
-.search_img{
-  width:20px;
-  height:auto;
-  margin-right:15px;
+.search_img {
+  width: 20px;
+  height: auto;
+  margin-right: 15px;
 }
-.search_input{
-  width:185px;
-  height:70px;
-  border:0;
-  outline:none;
+.search_input {
+  width: 185px;
+  height: 70px;
+  border: 0;
+  outline: none;
 }
-.inform{
-  width:435px;
-  height:100%;
-  float:right;
+.inform {
+  width: 435px;
+  height: 100%;
+  float: right;
 }
-.inform>ul>li{
-  float:left;
-  height:70px;
-  position:relative;
-  margin-left:30px;
-  padding:0 15px;
-  cursor:pointer;
+.inform > ul > li {
+  float: left;
+  height: 70px;
+  position: relative;
+  margin-left: 30px;
+  padding: 0 15px;
+  cursor: pointer;
 }
-.people{
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
-  margin-top:15px;
-  margin-right:15px;
+.people {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  margin-top: 15px;
+  margin-right: 15px;
 }
-.name{
-  color:#333;
-  position:relative;
-  top:12px;
+.name {
+  color: #333;
+  position: relative;
+  top: 12px;
 }
-.tobottom{
-  color:#9C9FA6;
-  position:relative;
-  top:16px;
-  margin:0 5px;
+.tobottom {
+  color: #9c9fa6;
+  position: relative;
+  top: 16px;
+  margin: 0 5px;
 }
-.message{
-  width:20px;
-  height:auto;
-  margin-top:25px;
+.message {
+  width: 20px;
+  height: auto;
+  margin-top: 25px;
 }
-.bomb{
-  position:absolute;
-  top:75px;
-  min-width:120px;
-  left:-30%;
+.bomb {
+  position: absolute;
+  top: 75px;
+  min-width: 120px;
+  left: -30%;
 }
-.bomb .list{
-  padding:15px 15px 15px 40px;
-  border-bottom:1px solid #EBEDF2;
+.bomb .list {
+  padding: 15px 15px 15px 40px;
+  border-bottom: 1px solid #ebedf2;
 }
-.bomb>ul{
-  background:#fff;
-  box-shadow:#DBD6DC 2px 3px 6px;
-  border-radius:8px;
-  -webkit-border-radius:8px;
-  -moz-border-radius:8px;
+.bomb > ul {
+  background: #fff;
+  box-shadow: #dbd6dc 2px 3px 6px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 }
-.bomb .log{
-  background:url(../assets/log.png) no-repeat 10px center;
-  background-size:20px;
+.bomb .log {
+  background: url(../assets/log.png) no-repeat 10px center;
+  background-size: 20px;
 }
-.bomb .switch{
-  background:url(../assets/switch.png) no-repeat 10px center;
-  background-size:20px;
+.bomb .switch {
+  background: url(../assets/switch.png) no-repeat 10px center;
+  background-size: 20px;
 }
-.mess{
-  line-height:44px;
-  width:100%;
-  text-align:left;
-  padding-left:10px;
-  border-bottom:1px solid #EBEDF2;
-  box-sizing:border-box;
+.mess {
+  line-height: 44px;
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+  border-bottom: 1px solid #ebedf2;
+  box-sizing: border-box;
 }
-.mess b{
-  color:#0084ff;
-  margin-right:5px;
+.mess b {
+  color: #0084ff;
+  margin-right: 5px;
 }
-.bomb .img_peo{
-  background:url(../assets/another_people.png) no-repeat 10px center;
-  background-size:40px;
+.bomb .img_peo {
+  background: url(../assets/another_people.png) no-repeat 10px center;
+  background-size: 40px;
 }
-.mess_fa{
-  width:260px;
-  left:-110px;
-  max-height:321px;
+.mess_fa {
+  width: 260px;
+  left: -110px;
+  max-height: 321px;
 }
-.mess_fa .list,.system_remb .list{
-  padding-left:60px;
+.mess_fa .list,
+.system_remb .list {
+  padding-left: 60px;
 }
-.mess_fa .mess_name,.system_remb .mess_name{
-  font-size:16px;
-  font-weight:bold;
-  color:#333;
-  line-height:30px;
+.mess_fa .mess_name,
+.system_remb .mess_name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  line-height: 30px;
 }
-.mess_fa .mess_txt,.system_remb .mess_txt{
-  font-size:14px;
-  color:#777;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
+.mess_fa .mess_txt,
+.system_remb .mess_txt {
+  font-size: 14px;
+  color: #777;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.system_remb{
-  width:260px;
-  left:-190px;
-  max-height:321px;
+.system_remb {
+  width: 260px;
+  left: -190px;
+  max-height: 321px;
 }
-.system_remb .list{
-  background:url(../assets/system_mess.png) no-repeat 10px center;
-  background-size:40px;
+.system_remb .list {
+  background: url(../assets/system_mess.png) no-repeat 10px center;
+  background-size: 40px;
 }
 </style>
